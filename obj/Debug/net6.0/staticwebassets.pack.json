@@ -1,0 +1,717 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\_project\\TplMvc\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TplMvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TplMvc.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_base.css",
+      "PackagePath": "staticwebassets\\css\\base\\_base.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_btn.css",
+      "PackagePath": "staticwebassets\\css\\base\\_btn.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_error.css",
+      "PackagePath": "staticwebassets\\css\\base\\_error.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_find.css",
+      "PackagePath": "staticwebassets\\css\\base\\_find.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_flow.css",
+      "PackagePath": "staticwebassets\\css\\base\\_flow.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_form.css",
+      "PackagePath": "staticwebassets\\css\\base\\_form.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_hide.css",
+      "PackagePath": "staticwebassets\\css\\base\\_hide.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_icheck.css",
+      "PackagePath": "staticwebassets\\css\\base\\_icheck.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_idate.css",
+      "PackagePath": "staticwebassets\\css\\base\\_idate.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_ifile.css",
+      "PackagePath": "staticwebassets\\css\\base\\_ifile.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_input.css",
+      "PackagePath": "staticwebassets\\css\\base\\_input.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_inum.css",
+      "PackagePath": "staticwebassets\\css\\base\\_inum.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_iread.css",
+      "PackagePath": "staticwebassets\\css\\base\\_iread.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_label.css",
+      "PackagePath": "staticwebassets\\css\\base\\_label.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_leftmenu.css",
+      "PackagePath": "staticwebassets\\css\\base\\_leftmenu.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_modal.css",
+      "PackagePath": "staticwebassets\\css\\base\\_modal.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_page.css",
+      "PackagePath": "staticwebassets\\css\\base\\_page.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_prog.css",
+      "PackagePath": "staticwebassets\\css\\base\\_prog.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_table.css",
+      "PackagePath": "staticwebassets\\css\\base\\_table.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_tool.css",
+      "PackagePath": "staticwebassets\\css\\base\\_tool.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\_toolbar.css",
+      "PackagePath": "staticwebassets\\css\\base\\_toolbar.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\base\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\datatables.css",
+      "PackagePath": "staticwebassets\\css\\base\\datatables.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\datepicker.css",
+      "PackagePath": "staticwebassets\\css\\base\\datepicker.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\html.css",
+      "PackagePath": "staticwebassets\\css\\base\\html.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\base\\icomoon.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\base\\summernote.css",
+      "PackagePath": "staticwebassets\\css\\base\\summernote.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\bootstrap-datepicker.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap-datepicker.css.map"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\css\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\css\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\css\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\css\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\icomoon.json",
+      "PackagePath": "staticwebassets\\css\\icomoon.json"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib.css",
+      "PackagePath": "staticwebassets\\css\\lib.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib.min.css",
+      "PackagePath": "staticwebassets\\css\\lib.min.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\bootstrap-5.1.3.css",
+      "PackagePath": "staticwebassets\\css\\lib\\bootstrap-5.1.3.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\bootstrap-datepicker-1.9.css",
+      "PackagePath": "staticwebassets\\css\\lib\\bootstrap-datepicker-1.9.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\datatables-1.11.5.css",
+      "PackagePath": "staticwebassets\\css\\lib\\datatables-1.11.5.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\css\\lib\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\css\\lib\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\css\\lib\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\css\\lib\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\jsplumbtoolkit-defaults-2.15.6.css",
+      "PackagePath": "staticwebassets\\css\\lib\\jsplumbtoolkit-defaults-2.15.6.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\lib\\summernote-bs5.css",
+      "PackagePath": "staticwebassets\\css\\lib\\summernote-bs5.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\my.css",
+      "PackagePath": "staticwebassets\\css\\my.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\my.min.css",
+      "PackagePath": "staticwebassets\\css\\my.min.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\summernote-bs4.js.map",
+      "PackagePath": "staticwebassets\\css\\summernote-bs4.js.map"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\summernote-bs4.min.js.map",
+      "PackagePath": "staticwebassets\\css\\summernote-bs4.min.js.map"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\view\\_xg_block.css_old",
+      "PackagePath": "staticwebassets\\css\\view\\_xg_block.css_old"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\view\\_xp.css",
+      "PackagePath": "staticwebassets\\css\\view\\_xp.css"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\css\\view\\_xp.css.bak",
+      "PackagePath": "staticwebassets\\css\\view\\_xp.css.bak"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\font\\summernote.eot",
+      "PackagePath": "staticwebassets\\font\\summernote.eot"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\font\\summernote.ttf",
+      "PackagePath": "staticwebassets\\font\\summernote.ttf"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\font\\summernote.woff2",
+      "PackagePath": "staticwebassets\\font\\summernote.woff2"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\image\\CustInput\\1KPR9EMA4A.png",
+      "PackagePath": "staticwebassets\\image\\CustInput\\1KPR9EMA4A.png"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\image\\noImage.jpg",
+      "PackagePath": "staticwebassets\\image\\noImage.jpg"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\Datatable.js",
+      "PackagePath": "staticwebassets\\js\\base\\Datatable.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\EditMany.js",
+      "PackagePath": "staticwebassets\\js\\base\\EditMany.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\EditOne.js",
+      "PackagePath": "staticwebassets\\js\\base\\EditOne.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\Flow.js",
+      "PackagePath": "staticwebassets\\js\\base\\Flow.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\Page.js",
+      "PackagePath": "staticwebassets\\js\\base\\Page.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_ajax.js",
+      "PackagePath": "staticwebassets\\js\\base\\_ajax.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_array.js",
+      "PackagePath": "staticwebassets\\js\\base\\_array.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_assert.js",
+      "PackagePath": "staticwebassets\\js\\base\\_assert.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_browser.js",
+      "PackagePath": "staticwebassets\\js\\base\\_browser.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_btn.js",
+      "PackagePath": "staticwebassets\\js\\base\\_btn.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_chart.js",
+      "PackagePath": "staticwebassets\\js\\base\\_chart.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_crud - 複製.j_old",
+      "PackagePath": "staticwebassets\\js\\base\\_crud - 複製.j_old"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_crudE.js",
+      "PackagePath": "staticwebassets\\js\\base\\_crudE.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_crudR.js",
+      "PackagePath": "staticwebassets\\js\\base\\_crudR.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_date.js",
+      "PackagePath": "staticwebassets\\js\\base\\_date.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_edit.js",
+      "PackagePath": "staticwebassets\\js\\base\\_edit.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_error.js",
+      "PackagePath": "staticwebassets\\js\\base\\_error.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_file.js",
+      "PackagePath": "staticwebassets\\js\\base\\_file.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_form.js",
+      "PackagePath": "staticwebassets\\js\\base\\_form.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_formData.js",
+      "PackagePath": "staticwebassets\\js\\base\\_formData.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_fun.js",
+      "PackagePath": "staticwebassets\\js\\base\\_fun.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_helper.js",
+      "PackagePath": "staticwebassets\\js\\base\\_helper.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_html.js",
+      "PackagePath": "staticwebassets\\js\\base\\_html.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_ibase.js",
+      "PackagePath": "staticwebassets\\js\\base\\_ibase.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_icheck.js",
+      "PackagePath": "staticwebassets\\js\\base\\_icheck.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_icolor.js",
+      "PackagePath": "staticwebassets\\js\\base\\_icolor.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_idate.js",
+      "PackagePath": "staticwebassets\\js\\base\\_idate.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_idt.js",
+      "PackagePath": "staticwebassets\\js\\base\\_idt.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_ifile.js",
+      "PackagePath": "staticwebassets\\js\\base\\_ifile.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_ihtml.js",
+      "PackagePath": "staticwebassets\\js\\base\\_ihtml.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_ilink.js",
+      "PackagePath": "staticwebassets\\js\\base\\_ilink.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_input.js",
+      "PackagePath": "staticwebassets\\js\\base\\_input.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_iradio.js",
+      "PackagePath": "staticwebassets\\js\\base\\_iradio.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_iread.js",
+      "PackagePath": "staticwebassets\\js\\base\\_iread.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_iselect.js",
+      "PackagePath": "staticwebassets\\js\\base\\_iselect.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_itext.js",
+      "PackagePath": "staticwebassets\\js\\base\\_itext.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_itextarea.js",
+      "PackagePath": "staticwebassets\\js\\base\\_itextarea.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_json.js",
+      "PackagePath": "staticwebassets\\js\\base\\_json.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_leftmenu.js",
+      "PackagePath": "staticwebassets\\js\\base\\_leftmenu.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_locale.js",
+      "PackagePath": "staticwebassets\\js\\base\\_locale.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_log.js",
+      "PackagePath": "staticwebassets\\js\\base\\_log.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_modal.js",
+      "PackagePath": "staticwebassets\\js\\base\\_modal.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_nav.js",
+      "PackagePath": "staticwebassets\\js\\base\\_nav.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_num.js",
+      "PackagePath": "staticwebassets\\js\\base\\_num.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_obj.js",
+      "PackagePath": "staticwebassets\\js\\base\\_obj.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_pjax.js",
+      "PackagePath": "staticwebassets\\js\\base\\_pjax.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_prog.js",
+      "PackagePath": "staticwebassets\\js\\base\\_prog.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_qrcode.js",
+      "PackagePath": "staticwebassets\\js\\base\\_qrcode.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_str.js",
+      "PackagePath": "staticwebassets\\js\\base\\_str.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_switch.js",
+      "PackagePath": "staticwebassets\\js\\base\\_switch.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_tab.js",
+      "PackagePath": "staticwebassets\\js\\base\\_tab.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_table.js",
+      "PackagePath": "staticwebassets\\js\\base\\_table.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_temp.js",
+      "PackagePath": "staticwebassets\\js\\base\\_temp.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_tool.js",
+      "PackagePath": "staticwebassets\\js\\base\\_tool.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_valid.js",
+      "PackagePath": "staticwebassets\\js\\base\\_valid.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\base\\_var.js",
+      "PackagePath": "staticwebassets\\js\\base\\_var.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\en-US.js",
+      "PackagePath": "staticwebassets\\js\\en-US.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\en-US.min.js",
+      "PackagePath": "staticwebassets\\js\\en-US.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib.js",
+      "PackagePath": "staticwebassets\\js\\lib.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib.min.js",
+      "PackagePath": "staticwebassets\\js\\lib.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\bootstrap-datepicker-1.9.js",
+      "PackagePath": "staticwebassets\\js\\lib\\bootstrap-datepicker-1.9.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\bootstrap.bundle-5.1.3.js",
+      "PackagePath": "staticwebassets\\js\\lib\\bootstrap.bundle-5.1.3.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\bootstrap.bundle-5.1.3.min.js",
+      "PackagePath": "staticwebassets\\js\\lib\\bootstrap.bundle-5.1.3.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\chart-3.6.2.js",
+      "PackagePath": "staticwebassets\\js\\lib\\chart-3.6.2.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\datatables-1.11.5.js",
+      "PackagePath": "staticwebassets\\js\\lib\\datatables-1.11.5.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jquery-3.5.1.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jquery-3.5.1.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jquery.blockUI-2.7.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jquery.blockUI-2.7.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jquery.pjax-2.0.1-bruce.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jquery.pjax-2.0.1-bruce.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jquery.simplePagination-1.6-bruce.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jquery.simplePagination-1.6-bruce.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jquery.validate-1.19.3-bruce.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jquery.validate-1.19.3-bruce.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jsplumb-2.15.6.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jsplumb-2.15.6.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\jsplumb-2.15.6.min.js",
+      "PackagePath": "staticwebassets\\js\\lib\\jsplumb-2.15.6.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\js\\lib\\modernizr-2.8.3.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\moment-2.24.js",
+      "PackagePath": "staticwebassets\\js\\lib\\moment-2.24.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\mustache-3.1.js",
+      "PackagePath": "staticwebassets\\js\\lib\\mustache-3.1.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\summernote-bs5-bruce.js",
+      "PackagePath": "staticwebassets\\js\\lib\\summernote-bs5-bruce.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\lib\\summernote-bs5.min-bruce.js",
+      "PackagePath": "staticwebassets\\js\\lib\\summernote-bs5.min-bruce.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\my.js",
+      "PackagePath": "staticwebassets\\js\\my.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\my.min.js",
+      "PackagePath": "staticwebassets\\js\\my.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\CustInput.js",
+      "PackagePath": "staticwebassets\\js\\view\\CustInput.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\Leave.js",
+      "PackagePath": "staticwebassets\\js\\view\\Leave.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\User.js",
+      "PackagePath": "staticwebassets\\js\\view\\User.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\User2.js",
+      "PackagePath": "staticwebassets\\js\\view\\User2.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpCms.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpCms.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpEasyRpt.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpEasyRpt.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpFlow.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpFlow.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpFlowTest.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpFlowTest.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpProg.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpProg.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpRole.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpRole.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpRole_v0.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpRole_v0.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\XpTranLog.js",
+      "PackagePath": "staticwebassets\\js\\view\\XpTranLog.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\view\\_xp.js",
+      "PackagePath": "staticwebassets\\js\\view\\_xp.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\zh-CN.js",
+      "PackagePath": "staticwebassets\\js\\zh-CN.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\zh-CN.min.js",
+      "PackagePath": "staticwebassets\\js\\zh-CN.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\zh-TW.js",
+      "PackagePath": "staticwebassets\\js\\zh-TW.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\js\\zh-TW.min.js",
+      "PackagePath": "staticwebassets\\js\\zh-TW.min.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\en-US\\BR.json",
+      "PackagePath": "staticwebassets\\locale\\en-US\\BR.json"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\en-US\\_BR.js",
+      "PackagePath": "staticwebassets\\locale\\en-US\\_BR.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\en-US\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\locale\\en-US\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\en-US\\dataTables.txt",
+      "PackagePath": "staticwebassets\\locale\\en-US\\dataTables.txt"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\en-US\\validate.j_old",
+      "PackagePath": "staticwebassets\\locale\\en-US\\validate.j_old"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\BR.json",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\BR.json"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\_BR.js",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\_BR.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\dataTables.txt",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\dataTables.txt"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\summernote.js",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\summernote.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-CN\\validate.js",
+      "PackagePath": "staticwebassets\\locale\\zh-CN\\validate.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\BR.json",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\BR.json"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\_BR.js",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\_BR.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\bootstrap-datepicker.js",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\bootstrap-datepicker.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\dataTables.txt",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\dataTables.txt"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\summernote.js",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\summernote.js"
+    },
+    {
+      "Id": "C:\\_project\\TplMvc\\wwwroot\\locale\\zh-TW\\validate.js",
+      "PackagePath": "staticwebassets\\locale\\zh-TW\\validate.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.TplMvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.TplMvc.props",
+      "PackagePath": "build\\TplMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.TplMvc.props",
+      "PackagePath": "buildMultiTargeting\\TplMvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.TplMvc.props",
+      "PackagePath": "buildTransitive\\TplMvc.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
