@@ -30,7 +30,7 @@ services.AddControllersWithViews()
 services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 //4.user info for base component
-services.AddSingleton<IBaseUserSvc, MyBaseUserS>();
+services.AddSingleton<IBaseUserSvc, MyBaseUserSvc>();
 
 //5.ado.net for mssql
 services.AddTransient<DbConnection, SqlConnection>();
@@ -41,6 +41,13 @@ var config = new ConfigDto();
 builder.Configuration.GetSection("FunConfig").Bind(config);
 _Fun.Config = config;
 
+//cache server
+//services.AddDistributedMemoryCache();   //AddDistributedRedisCache is old
+services.AddMemoryCache();
+//services.AddStackExchangeRedisCache(opts => { opts.Configuration = config.Redis; });
+services.AddSingleton<ICacheSvc, CacheMemSvc>();
+
+/*
 //7.session (memory cache)
 services.AddDistributedMemoryCache();
 //services.AddStackExchangeRedisCache(opts => { opts.Configuration = "127.0.0.1:6379"; });
@@ -50,6 +57,21 @@ services.AddSession(opts =>
     opts.Cookie.IsEssential = true;
     opts.IdleTimeout = TimeSpan.FromMinutes(60);
 });
+*/
+
+//cors
+string[] origins = _Fun.Config.AllowOrigins.Split(',');
+services.AddCors(opts =>
+{
+    opts.AddDefaultPolicy(a =>
+    {
+        a.WithOrigins(origins);
+        a.AllowAnyHeader();
+        a.AllowAnyMethod();
+        a.AllowCredentials();
+    });
+});
+
 #endregion
 
 
@@ -78,12 +100,14 @@ else
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
-app.UseSession();
+
+app.UseCors(); //加上後會套用到全域
+app.UseAuthentication();    //認証
+app.UseAuthorization();     //授權
+//app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Login}/{id?}");
 
 app.Run();

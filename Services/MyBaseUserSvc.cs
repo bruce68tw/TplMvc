@@ -6,12 +6,12 @@ using BaseApi.Services;
 
 namespace TplMvc.Services
 {
-    public class MyBaseUserS : IBaseUserSvc
+    public class MyBaseUserSvc : IBaseUserSvc
     {
         //get base user info
         public BaseUserDto GetData()
         {
-            return _Http.GetSession().Get<BaseUserDto>(_Fun.FidBaseUser)!;   //extension method
+            return _Http.CookieToBr();
         }
     }
 }
