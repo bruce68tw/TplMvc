@@ -2,10 +2,11 @@
 @using TplMvc.Services
 
 @{
-    var locale = _Fun.Config.Locale;
-    var min = _Fun.IsDev ? "" : ".min";   //min js
     var libVer = _Xp.LibVer;
     var myVer = _Xp.MyVer;
+    var min = _Fun.IsDev ? "" : ".min";   //min js
+    var locale = _Locale.GetLocaleByUser();
+    //var locale = _Fun.Config.Locale;
 
     var userType = _Fun.GetBaseUser().UserType;
     var setPwd = new MenuDto() { Name = "設定密碼", Url = "/SetPwd/Index" };
