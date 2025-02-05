@@ -16,11 +16,11 @@ namespace TplMvc.Services
         }
         public static async Task<List<IdStrDto>?> GetUsersAsync(Db? db = null)
         {
-            return await TableToListAsync("User", db);
+            return await TableToListAsync("XpUser", db);
         }
         public static async Task<List<IdStrDto>?> GetDeptsAsync(Db? db = null)
         {
-            return await TableToListAsync("Dept", db);
+            return await TableToListAsync("XpDept", db);
         }
         public static async Task<List<IdStrDto>?> GetRolesAsync(Db? db = null)
         {
