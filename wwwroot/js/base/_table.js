@@ -15,7 +15,7 @@ var _table = {
     //delete, up, down
     rowFun: function () {
         return '' +
-            _str.format('<a href="javascript:_crudE.onUpdateA(\'{0}\');"><i class="ico-delete" title="{0}"></i></a>', key, _BR.TipUpdate) +
+            _str.format('<a href="javascript:_me.crudE.onUpdateA(\'{0}\');"><i class="ico-delete" title="{0}"></i></a>', key, _BR.TipUpdate) +
             _str.format('<a href="javascript:_table.rowMoveUp(this);"><i class="ico-up" title="{0}"></i></a>', _BR.TipUpdate) +
             _str.format('<a href="javascript:_table.rowMoveDown(this);"><i class="ico-down" title="{0}"></i></a>', _BR.TipUpdate);
     },
@@ -28,7 +28,7 @@ var _table = {
      * return {int} rows count
      */
     getRowCount: function (table, fid) {
-        return table.find(_fun.fidFilter(fid)).length;
+        return table.find(_input.fidFilter(fid)).length;
     },
 
 }; //class

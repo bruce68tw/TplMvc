@@ -6,16 +6,16 @@
 var _form = {
 
     /**
-     * get input values, except read type
+     * get input values, 排除不儲存的欄位, 可用在多筆的單行
      * param form {object} input form
      * return {json}
      */ 
     toRow: function (form) {
         //skip link & read fields
         var row = {};
-        form.find(_fun.fidFilter()).filter(':not(.xi-unsave)').each(function () {
+        form.find(_input.fidFilter()).filter(':not(.xi-unsave)').each(function () {
             var obj = $(this);
-            row[_fun.getFid(obj)] = _input.getO(obj, form);            
+            row[_input.getFid(obj)] = _input.getO(obj, form);            
         });
         return row;
 
@@ -68,7 +68,7 @@ var _form = {
      * param form {object}
      */
     reset: function (form) {
-        form.find(_fun.fidFilter()).each(function () {
+        form.find(_input.fidFilter()).each(function () {
             _input.setO($(this), '', form);
         });
     },

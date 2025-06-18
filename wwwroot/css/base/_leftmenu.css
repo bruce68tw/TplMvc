@@ -1,4 +1,4 @@
-﻿/* main form */
+﻿/* 左側功能表 */
 .xg-leftmenu {
     margin-left: 0;
     padding: 0;
@@ -6,9 +6,7 @@
     max-width: 300px;*/
     width: 250px;
     height: 100%;
-    /*font-size: 14px;*/
     /*margin: 0;*/
-    background: #FFFFFF;
     transition: 0.5s;
     z-index: 1000;
 }
@@ -36,28 +34,21 @@
     /* 文字 */
     .xg-leftmenu a {
         display: block; /* 選取的有效寬度為100% */
-        font-size: 15px;
-        color: #555 !important;
         text-decoration: none !important;
     }
 
     .xg-leftmenu a:hover {
         cursor: pointer;
         text-decoration: none; /* remove underline */
-        color: #EDD8E7 !important;
-        background: #333237;
     }
 
 .xg-leftmenu a:hover i {
-    color: #EDD8E7;
-    background: #333237;
 }
 
 /* icon */
 .xg-leftmenu i {
     margin-right: 10px;
     padding-left: 12px;
-    /*color: #fff;*/
     width: 25px;    /* 讓文字對齊 */
 }
 
@@ -67,11 +58,12 @@
         font-family: 'icomoon';
         content: "\f107"; /* down arrow */
     }
-.xg-leftmenu .xg-arrow.xg-open:before {
-    content: "\f106";   /* up arrow */
-}
+    .xg-leftmenu .xg-arrow.xg-open:before {
+        content: "\f106";   /* up arrow */
+    }
 
-.xg-leftmenu-panel {
+/* 子功能表(第2層) 的外框 */
+.xg-leftmenu-subbox {
     list-style: none;
     /*
     -moz-padding-start: 0;
@@ -81,16 +73,15 @@
     padding-start: 0;
     */
     padding: 0;
-    background: #DAF8FF;
 }
 
-.xg-leftmenu-panel li {
-    border: none;
-}
+    .xg-leftmenu-subbox li {
+        border: none;
+    }
 
-/* sub menu text */
-.xg-leftmenu-panel a {
-    /*font-size: 15px;
-    color: #fff;*/
-    padding-left: 22px;
-}
+    /* sub menu text */
+    .xg-leftmenu-subbox a {
+        /*font-size: 15px;
+        color: #fff;*/
+        padding-left: 22px;
+    }

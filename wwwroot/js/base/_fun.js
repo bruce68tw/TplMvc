@@ -27,7 +27,17 @@ var _fun = {
     locale: 'zh-TW',    //now locale, _Layout.cshmlt will set
     maxFileSize: 50971520,  //upload file limit(50M)
     isRwd: false,
-    //pageRows: 10,       //for _page.js (pagination object)
+    pageRows: 10,   //must be 10,20(not 25),50,100
+
+    //datatables column define default values
+    dtColDef: {
+        className: 'xg-center',
+        orderable: false,
+        targets: '_all',
+    },
+
+    //now userId
+    userId: '',
 
     //mid variables
     //data: {},
@@ -47,48 +57,12 @@ var _fun = {
         moment.locale(_fun.locale);
     },
 
-    //get header json object for jwt
-    jsonAddJwtHeader: function (json) {
-        if (_fun.jwtToken)
-            json.headers = _fun.getJwtAuth();
-    },
-
-    getJwtAuth: function () {
-        return {
-            'Authorization': _fun.getJwtBearer()
-        };
-    },
-
-    getJwtBearer: function () {
-        return 'Bearer ' + _fun.jwtToken;
-    },
-
     //server need Fun/Hello()
     //no called
     onHelloA: async function () {
         await _ajax.getStrA('../Fun/Hello', null, function (msg) {
             alert(msg);
         });
-    },
-
-    /**
-     * get data-fid of object
-     * param obj {object}
-     * return fid string
-     */
-    getFid: function (obj) {
-        return obj.data('fid');
-    },
-
-    /**
-     * get data-fid string, ex: [data-fid=XXX]
-     * param fid {stirng} optional, if empty means find all inputs with data-fid
-     * return {string} filter
-     */
-    fidFilter: function (fid) {
-        return _str.isEmpty(fid)
-            ? '[data-fid]'
-            : '[data-fid=' + fid + ']';
     },
 
     /*
@@ -120,8 +94,8 @@ var _fun = {
         });
     },
 
-    block: function (){
-        $.blockUI({
+    block: function (obj) {
+        var data = {
             message: '' +
                 '<table><tr><td style="height:50px">' +
                 '   <i class="spinner ico-spin"></i>' +
@@ -134,11 +108,18 @@ var _fun = {
                 left: '42%',
             },
             overlayCSS: { opacity: 0.3 },
-        });
+        };
+        if (obj != null && obj.length > 0)
+            $(obj).block(data);
+        else
+            $.blockUI(data);
     },
 
-    unBlock: function () {
-        $.unblockUI();
+    unBlock: function (obj) {
+        if (obj != null && obj.length > 0)
+            $(obj).unblock();
+        else
+            $.unblockUI();
     },
 
     //#region remark code

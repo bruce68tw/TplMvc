@@ -22,7 +22,7 @@ var _ibase = {
     },
     //get value by object
     getO: function (obj) {
-        return obj.val();
+        return obj == null ? null : obj.val();
     },
 
     //get input border for show red border
@@ -40,6 +40,7 @@ var _ibase = {
     },
     setO: function (obj, value) {
         obj.val(value);
+        obj.text(value);    //for XiRead
     },
 
     //set edit status

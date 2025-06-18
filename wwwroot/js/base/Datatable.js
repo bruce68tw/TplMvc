@@ -66,6 +66,8 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
         
         //default config for dataTables
         var config = {
+            pageLength: _fun.pageRows || 10,
+            lengthMenu: [10, 20, 50, 100], //25 -> 20 for more friendly
             processing: false,  //use custom processing msg
             serverSide: true,   //server pagination
             jQueryUI: false,
@@ -84,26 +86,32 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
             },
 
             //default toolbar layout
-            dom: _crudR.dtDom,
-
+            //dom: '<"toolbar">t<li>p', 
+            dom: `
+t
+<"row d-flex justify-content-between align-items-center mt-2"
+    <"col d-flex align-items-center gap-2 li-container"li>
+    <"col-auto"p>
+>
+`,
             //call after dataTables initialize
             //1.add toolbar button list if need
             //2.change find action: find after enter !!
             initComplete: function (settings, json) {
                 //1.toolbar
                 if (tbarHtml)
-                    $(this).closest('.dataTables_wrapper').find('div.toolbar').html(tbarHtml);
+                    $(this).closest('.tableRead_wrapper').find('div.toolbar').html(tbarHtml);
 
                 //check filter existed
                 var filter = $(selector + "_filter input");
                 if (filter.length > 0) {
                     //2.unbind first
-                    filter.unbind();
+                    filter.off();
 
                     //bind key enter for quick search
                     var api = this.api();
-                    filter.bind('keyup', function (e) {
-                        if (e.keyCode === 13) {
+                    filter.on('keyup', function (e) {
+                        if (e.key === 'Enter') {
                             this.resetCount();
 
                             //run search
@@ -149,6 +157,7 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
                     this._start = this.dt.page.info().start;
                     this._keepStart = false; //reset
 
+                    //只顯示錯誤訊息, 不處理欄位 validation error
                     var errMsg = _ajax.resultToErrMsg(result);
                     if (errMsg) {
                         _tool.msg(errMsg);
@@ -188,9 +197,9 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
 
         //add custom columnDefs
         if (dtConfig) {
-            if (!_var.isEmpty(dtConfig.columnDefs)) {
+            if (_var.notEmpty(dtConfig.columnDefs)) {
                 var colDefs = dtConfig.columnDefs;
-                colDefs[colDefs.length] = _crudR.dtColDef;   //add last array element
+                colDefs[colDefs.length] = _fun.dtColDef;   //add last array element
             }
             config = _json.copy(dtConfig, config);
         }

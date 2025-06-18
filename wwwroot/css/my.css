@@ -119,9 +119,16 @@
   content: "\ea14";
 }
 
+/* 不歸納到某個元件 */
 
 .xg-hide {
     display: none;
+}
+
+@media (max-width:768px) {
+    .xg-hide-rwd {
+        display: none !important;
+    }
 }
 
 .xg-inline {
@@ -175,15 +182,16 @@
 /* look like link */
 .xg-link-btn {
     background: none !important;
-    color: inherit;
+    /*color: inherit;*/
     border: none;
     padding: 0 !important;
-    font: inherit;
+    /*font: inherit;*/
     /*border is optional*/
     border-bottom: 1px solid #444;
     cursor: pointer;
 }
 
+/* 用來放多個 button */
 .xg-btns-box {
     padding: 3px 0 3px 0;
     display: flex;  /* 間距會變小 */
@@ -259,15 +267,14 @@ span.error {
     border: 1px solid #FF8B55 !important;
 }
 */
+/* 查詢畫面 */
 
-/* toolbar */
-
-/* find form toolbar */
+/* 右上方工具列 */
 .xg-find-tbar {
     padding-top: 8px;
 }
 
-/* find form, use $.slideToggle() */
+/* ?? find form, use $.slideToggle() */
 .xg-find-form {
     display: none;
     padding: 10px 0 10px 0;
@@ -279,206 +286,130 @@ span.error {
         padding: 10px 0 10px 0;
     }
 
-/*
-.jtk-demo-main {
-    background-color: transparent;
-    font-family: Arial,sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width:1500px;
-    position: relative;
-    margin-top:98px;
+.xf-start, .xf-end, .xf-node {
+	cursor: move;
+}
+.xf-start-text, .xf-end-text, .xf-node-text {
+	fill: black;
+	cursor: move;
+}
+/* when hover */
+.xf-end.on, .xf-node.on {
+	stroke: blue;
+	stroke-width: 3px;
 }
 
-.jtk-demo-canvas {
-    margin-left: 160px;
-    height:750px;
-    max-height:700px;
-    border:1px solid #CCC;
-    background-color:white;
+/* 1.開始節點(also button) */
+.xf-start {
+	r: 20; /* 半徑, 沒有單位 */
+	fill: #E2F4D7;
+	background: #E2F4D7;
+	stroke: #BAE89F;
+	stroke-width: 1px;
+	border: #BAE89F 1px solid;
 }
 
-.canvas-wide {
-    margin-left:0;
-}
-*/
-
-.xf-line-label {
-    -webkit-transition: background-color 0.25s ease-in;
-    -moz-transition: background-color 0.25s ease-in;
-    transition: background-color 0.25s ease-in;
-    background-color: white;
-    opacity: 0.8;
-    padding: 0.3em;
-    border-radius: 0.5em;
-    /*border: 1px solid #346789;*/
-    cursor: pointer;
+/* 2.結束節點(also button) */
+.xf-end {
+	r: 20;
+	fill: #FEE1ED;
+	background: #FEE1ED;
+	stroke: #FD88BF;
+	stroke-width: 1px;
+	border: #FD88BF 1px solid;
 }
 
-
-.zz_demo {
-    /* for IE10+ touch devices */
-    touch-action:none;
-}
-
+/* 3.一般節點(also button) */
 .xf-node {
-    padding: 12px 18px 12px 12px;
-    position: absolute;
-    z-index: 4;
-    border: 1px solid #2e6f9a;
-    box-shadow: 2px 2px 19px #e0e0e0;
-    -o-box-shadow: 2px 2px 19px #e0e0e0;
-    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
-    -moz-box-shadow: 2px 2px 19px #e0e0e0;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    opacity: 0.8;
-    cursor: move;
-    background-color: white;
-    font-size: 13px;
-    -webkit-transition: background-color 0.25s ease-in;
-    -moz-transition: background-color 0.25s ease-in;
-    transition: background-color 0.25s ease-in;
+	fill: #DFDEFE;
+	background: #DFDEFE;
+	stroke: #B6B4E9;
+	stroke-width: 1px;
+	border: #B6B4E9 1px solid;
+	rx: 5px; /* 水平圓角半徑 */
+	ry: 5px; /* 垂直圓角半徑 */
 }
 
-.xf-node:hover {
-    background-color: #5c96bc;
-    color: white;
+/* 4.自動節點?? */
+.xf-auto {
+	fill: white;
+	stroke: black;
+	stroke-width: 1px;
+}
+.xf-auto-text {
+    fill: black;	
 }
 
-.xf-node.xf-start-node {
-    border-color: red;
-}
-.xf-node.xf-end-node {
-    border-color: red;
-    border-radius: 50%;
-    padding: 12px;
-    width: 45px;
-    height: 45px;
-}
-    .xf-node.xf-end-node .xd-name {
-        margin-left: -2px !important;
-    }
-    .xf-node.xf-end-node .xf-ep {
-        display: none !important;
-    }
-
-/*
-.xf-node.xf-auto-node {
-    border: 3px solid gray;
-    border-radius: 0;
-}
-*/
-
-/*
-.aLabel {
-    -webkit-transition: background-color 0.25s ease-in;
-    -moz-transition: background-color 0.25s ease-in;
-    transition: background-color 0.25s ease-in;
-}
-.aLabel {
-    background-color: white;
-    opacity: 0.8;
-    padding: 0.3em;
-    border-radius: 0.5em;
-    border: 1px solid #346789;
-    cursor: pointer;
-}
-*/
-
-/*
-.xf-line-label.jtk-hover, .jtk-source-hover, .jtk-target-hover {
-    background-color: #1e8151;
-    color: white;
-}
-*/
-
-/* end point, class name fix to xf-ep !! */
-.xf-ep {
-    position: absolute;
-    bottom: 37%;
-    right: 5px;
-    width: 1em;
-    height: 1em;
-    background-color: orange;
-    cursor: pointer;
-    box-shadow: 0 0 2px black;
-    -webkit-transition: -webkit-box-shadow 0.25s ease-in;
-        -moz-transition: -moz-box-shadow 0.25s ease-in;
-        transition: box-shadow 0.25s ease-in;
+/* 節點文字後的小方塊, 用來拖拉流程線 */
+.xf-pin {
+	fill: orange;
+	stroke: red;
+	stroke-width: 1px;
+	cursor: crosshair;	/* 十字形狀 */
 }
 
-.xf-ep:hover {
-    box-shadow: 0 0 6px black;
+/* 流程線 */
+.xf-line {
+	fill: none;
+	stroke: #898484;
+	stroke-width: 2px;
+	/*stroke-linejoin: round;*/
+}
+/* temp line 或無迄點 */
+.xf-line.off {
+	stroke: red;
 }
 
-.zz_statemachine-demo .jtk-endpoint {
-    z-index: 3;
+/* 流程線指定起點位置 */
+	.xf-line.xf-way {
+		stroke-dasharray: 3,3;
+	}
+
+/* line text */
+.xf-line-text {
+	fill: black;	
 }
 
-/* no used
-#opened {
-    left: 10em;
-    top: 5em;
+/* 流程線末端箭頭 */
+.xf-arrow {
+	stroke: #898484;
+	stroke-width: 2px;
+	stroke-linecap: round; /*圓邊*/
+	cursor: crosshair; /* 十字形狀 */
 }
-
-#phone1 {
-    left: 35em;
-    top: 12em;
-    width: 7em;
-}
-
-#inperson {
-    left: 12em;
-    top: 23em;
-}
-
-#phone2 {
-    left: 28em;
-    top: 24em;
-}
-
-#rejected {
-    left: 10em;
-    top: 35em;
-}
-*/
-
-.dragHover {
-    border: 2px solid orange;
-}
-
-path, .jtk-endpoint { cursor:pointer; }
 
 /* context menu */
-/* The whole thing */
 .xf-menu {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    overflow: hidden;
-    border: 1px solid #CCC;
-    white-space: nowrap;
-    font-family: sans-serif;
-    background: #FFF;
-    color: #333;
-    border-radius: 5px;
-    padding: 0;
-    min-width: 100px;
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	overflow: hidden;
+	border: 1px solid #CCC;
+	white-space: nowrap;
+	font-family: sans-serif;
+	background: #FFF;
+	color: #333;
+	border-radius: 5px;
+	padding: 0;
+	min-width: 100px;
 }
 
-/* Each of the items in the list */
-.xf-menu li {
-    padding: 6px 15px;
-    cursor: pointer;
-    list-style-type: none;
-    transition: all .3s ease;
-}
+	/* Each of the items in the list */
+	.xf-menu li {
+		padding: 6px 15px;
+		cursor: pointer;
+		list-style-type: none;
+		transition: all .3s ease;
+	}
 
-.xf-menu li:hover {
-    background-color: #DEF;
-}
+		.xf-menu li:hover {
+			background-color: #DEF;
+		}
+		.xf-menu li.off {
+			color: #aaa;
+			cursor: not-allowed;
+		}
+
 
 /* form without line */
 /* 停用 xg-row */
@@ -517,16 +448,6 @@ path, .jtk-endpoint { cursor:pointer; }
 .xg-fade.hide {
     display: none;
 }
-.xg-hide {
-    display: none;
-}
-
-@media (max-width:768px) {
-    .xg-hide-rwd {
-        display: none !important;
-    }
-}
-
 
 /**
  * checkbox, radio, use pure css, no js
@@ -671,6 +592,7 @@ path, .jtk-endpoint { cursor:pointer; }
 .xi-file {
     margin-bottom: 0 !important;
 }
+/* 輸入欄位的外框 */
 .xg-input {
     padding-top: 7px;
     min-height: 43px;
@@ -695,8 +617,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+/* 唯讀欄位 */
 
-/* 在輸入欄位(右邊)的label*/
+/* 在輸入欄位(右邊)的label, line form(畫面有格線) 時欄位無外框 */
 .xg-lineform .xi-read {
     border: none;
     padding-left: 0;
@@ -744,7 +667,7 @@ input[type=number] {
     text-align: left;
 }
 
-/* main form */
+/* 左側功能表 */
 .xg-leftmenu {
     margin-left: 0;
     padding: 0;
@@ -752,9 +675,7 @@ input[type=number] {
     max-width: 300px;*/
     width: 250px;
     height: 100%;
-    /*font-size: 14px;*/
     /*margin: 0;*/
-    background: #FFFFFF;
     transition: 0.5s;
     z-index: 1000;
 }
@@ -782,28 +703,21 @@ input[type=number] {
     /* 文字 */
     .xg-leftmenu a {
         display: block; /* 選取的有效寬度為100% */
-        font-size: 15px;
-        color: #555 !important;
         text-decoration: none !important;
     }
 
     .xg-leftmenu a:hover {
         cursor: pointer;
         text-decoration: none; /* remove underline */
-        color: #EDD8E7 !important;
-        background: #333237;
     }
 
 .xg-leftmenu a:hover i {
-    color: #EDD8E7;
-    background: #333237;
 }
 
 /* icon */
 .xg-leftmenu i {
     margin-right: 10px;
     padding-left: 12px;
-    /*color: #fff;*/
     width: 25px;    /* 讓文字對齊 */
 }
 
@@ -813,11 +727,12 @@ input[type=number] {
         font-family: 'icomoon';
         content: "\f107"; /* down arrow */
     }
-.xg-leftmenu .xg-arrow.xg-open:before {
-    content: "\f106";   /* up arrow */
-}
+    .xg-leftmenu .xg-arrow.xg-open:before {
+        content: "\f106";   /* up arrow */
+    }
 
-.xg-leftmenu-panel {
+/* 子功能表(第2層) 的外框 */
+.xg-leftmenu-subbox {
     list-style: none;
     /*
     -moz-padding-start: 0;
@@ -827,20 +742,19 @@ input[type=number] {
     padding-start: 0;
     */
     padding: 0;
-    background: #DAF8FF;
 }
 
-.xg-leftmenu-panel li {
-    border: none;
-}
+    .xg-leftmenu-subbox li {
+        border: none;
+    }
 
-/* sub menu text */
-.xg-leftmenu-panel a {
-    /*font-size: 15px;
-    color: #fff;*/
-    padding-left: 22px;
-}
-
+    /* sub menu text */
+    .xg-leftmenu-subbox a {
+        /*font-size: 15px;
+        color: #fff;*/
+        padding-left: 22px;
+    }
+/* 彈出式視窗 */
 /*
 .xg-modal .modal-dialog {
     min-width: 200px;
@@ -868,7 +782,9 @@ input[type=number] {
     padding: 0 20px 10px;
 }
 
+/* 分頁元件 */
 
+/* 顯示筆數&資訊 */
 .xg-page-menu {
     float: left;
 }
@@ -889,6 +805,7 @@ input[type=number] {
         justify-content: center !important;
     }
 }
+/* 右側工作區上方功能名稱 */
 
 /* prog path, razor 只支援 inline style */
 .xg-prog-path {
@@ -952,6 +869,7 @@ input[type=number] {
         padding: 0.75rem; /* front web */
     }
 
+    /*
     .xg-table th {
         background: #eee;
     }
@@ -959,6 +877,7 @@ input[type=number] {
     .xg-table tr:hover {
         background: #F6F6F6;
     }
+    */
 
     .xg-table.xg-no-hline {
         border-width: 1px 0 1px 1px !important;
@@ -1008,7 +927,7 @@ tr select {
 
 @media (max-width:768px) {
     .xg-table {
-        background: #fff;
+        /*background: #fff;*/
         overflow: hidden;
         border: none;
     }
@@ -1070,9 +989,9 @@ tr select {
 }
 
 /* bootstrap alert */
-#xgAlert {
+.xg-alert {
     position: fixed; 
-    top: 3px; 
+    top: 48px; 
     right: 3px; 
     width: auto;
     z-index: 9999; 
@@ -1080,7 +999,7 @@ tr select {
 }
 
 /*
-#xgWait {
+#xg-wait {
     display: none;  
     position: fixed;
     top: 33%;
@@ -1088,7 +1007,7 @@ tr select {
 }
 */
 
-/* xg-msg for both xgMsg & xgAns */
+/* xg-msg class for both xgMsg & xgAns */
 .xg-msg .modal-dialog {
     min-width: 280px;
     max-width: 480px;
@@ -1113,14 +1032,14 @@ tr select {
 }
 */
 
-#xgImage .modal-body {
+.xg-image .modal-body {
     padding: 3px;
 }
-#xgImage .modal-footer {
+.xg-image .modal-footer {
     border: none;
     padding: 5px;
 }
-#xgImage img {
+.xg-image img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
@@ -1137,14 +1056,6 @@ body.xg-show-wait {
    modal element will be visible */
 body.xg-show-wait .xg-wait {
     display: block;
-}
-
-
-/* toolbar */
-
-/* row list toolbar */
-.xg-list-tbar {
-    padding: 3px 0 3px 0;
 }
 
 
@@ -1216,88 +1127,8 @@ textarea.form-control {
     width: 100% !important;    
 }
 
+/* bootstrap datepicker */
 
-/* 筆數起迄&合計 */
-.dataTables_info {
-    padding-top: 4px !important;
-}
-
-.dataTables_wrapper {
-    padding: 0;
-}
-
-    .dataTables_wrapper .dataTables_length, .dataTables_info, .toolbar {
-        float: left;
-    }
-
-
-/* change sorting icon to font-awesome
-    see: https://datatables.net/blog/2014-06-06
-*/
-table.dataTable thead th {
-    position: relative;
-    background-image: none !important; /* Remove the DataTables bootstrap integration styling */
-}
-
-    /* Bruce add, 否則會出現2個icon !! */
-    /*
-    table.dataTable thead th.sorting:before,
-    table.dataTable thead th.sorting_asc:before,
-    table.dataTable thead th.sorting_desc:before {
-        display: none;
-    }
-
-    table.dataTable thead th.sorting:after,
-    table.dataTable thead th.sorting_asc:after,
-    table.dataTable thead th.sorting_desc:after {
-        position: absolute;
-        top: 15px;
-        right: 8px;
-        display: block;
-        font-family: FontAwesome;
-    }
-
-    table.dataTable thead th.sorting:after {
-        content: "\f0dc";
-        opacity: 0.2;
-    }
-
-    table.dataTable thead th.sorting_asc:after {
-        content: "\f0de";
-        opacity: 0.8;
-    }
-
-    table.dataTable thead th.sorting_desc:after {
-        content: "\f0dd";
-        opacity: 0.8;
-    }
-    */
-
-/* rewirte dataTables.bootstrap4.css */
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc_disabled:before {
-    right: 1em;
-    content: '\e902' !important;
-    font-family: 'icomoon' !important;
-	font-weight: lighter !important;
-}
-
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:after {
-    right: 0.5em;
-    content: '\e901' !important;
-    font-family: 'icomoon' !important;
-	font-weight: lighter !important;
-}
-
-
-/* use bootstrap datepicker */
 .datepicker {
     z-index: 9999 !important;
 }
@@ -1373,12 +1204,6 @@ table.dataTable thead .sorting_desc_disabled:after {
 body {
     /*padding-top: 50px;*/
     padding-bottom: 20px;
-    font-size: 14px !important;
-}
-
-body, label {
-    color: #424243;
-    font-family: 微軟正黑體,Arial,Roboto,Helvetica Neue,Helvetica,sans-serif;
 }
 
 /* space in button & icon */
@@ -1409,4 +1234,142 @@ body, label {
 
 .note-editable[contenteditable=false] {
     background: #eee !important;
+}
+/* color & font size only */
+
+/* ==== html, body ==== */
+html, body {
+    font-size: 16px !important; /* global */
+    font-family: 微軟正黑體,Arial,Roboto,Helvetica Neue,Helvetica,sans-serif;
+    /*background: #232B3F;*/
+}
+body, label {
+    /* color: #9797AB !important;*/
+}
+.form-control, .form-select {
+    /*background: #1A202E;*/
+}
+
+/* ==== left menu ==== */
+.xg-leftmenu {
+    background: #E0E0E0;
+    border-right: 1px solid #C1C1C1;
+}
+
+/* li(item),a(文字),i(icon) */
+.xg-leftmenu li {
+    /*
+    color: #fff;
+    border-bottom: solid 1px #E5E5E5;
+    */
+}
+
+    /* 文字 */
+    .xg-leftmenu a {
+        font-size: 15px;
+        color: #555 !important;
+    }
+
+
+.xg-leftmenu a, .xg-leftmenu i {
+    color: #222222 !important;
+}
+
+.xg-leftmenu a:hover, .xg-leftmenu a:hover i {
+    color: #222222 !important;
+    background: #CFCFCF;
+}
+/*
+.xg-leftmenu a:hover i {
+    color: #222222;
+    background: #EEEEEE;
+}
+*/
+
+/* 子功能表 */
+.xg-leftmenu-subbox {
+    background: #FAFAFA;
+}
+
+    .xg-leftmenu-subbox a {
+        color: #222222;
+    }
+
+    .xg-leftmenu-subbox a:hover {
+        background: #EEEEEE !important;
+    }
+
+.xg-table th {
+    background: #E0E0E0 !important;
+}
+
+.xg-table tr:hover {
+    background: #FAFAFA !important;
+}
+
+
+/* ==== modal ==== */
+.xg-modal .modal-header {
+    border-bottom: none;
+    background: #FAFAFA;
+}
+.xg-modal .modal-body, .xg-modal .modal-footer {
+    /*background: #404040;*/
+}
+
+
+/* === checkbox/radio === */
+/* checkbox, span is square/round checked sign */
+.xi-check > span {
+    /*border: 2px solid #BFBFBF;
+	background: white;*/
+}
+
+/* checked background */
+.xi-check > input:checked + span {
+    /*border: 2px solid #0D6EFD;
+	background: #0D6EFD;*/
+}
+
+/* checked sign */
+.xi-check > input:checked + span:after {
+    /*border: 2px solid #F1F6FF;
+	background: #1266F1;*/
+}
+
+/* radio checked sign 填滿 */
+.xi-check > input:checked + .xi-rspan:after {
+    /*background: #F1F6FF;*/
+}   
+
+/* disabled */
+.xi-check > input:disabled + span {
+    /*color: #b8b8b8;
+    border: 2px solid #86B7FE;
+    background: #86B7FE;
+    */
+}
+
+.xg-wait {
+    font-size: 24px;    
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景色 */
+}
+
+.xp-prog-title {
+    height: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* chart.js */
+.chart-title {
+    font-size: 24px;
+}
+
+
+@media (max-width:768px) {
+    .xg-table {
+        background: #fff !important;
+    } 
 }

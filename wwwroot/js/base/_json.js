@@ -19,6 +19,21 @@ var _json = {
     */
 
     /**
+     * 轉換一筆json為多筆資料, 用於產生統計圖
+     * param from {json}
+     * param to {json}
+     * return {json} new json data
+     */
+    toChartRows: function (json, cols) {
+        var rows = [];
+        for (var i = 0; i < cols.length; i++) {
+            var fid = cols[i];
+            rows.push({ Id: fid, Num:json[fid]});
+        }
+        return rows;
+    },
+
+    /**
      * copy json data
      * param from {json}
      * param to {json}
@@ -90,7 +105,7 @@ var _json = {
 
     //convert string to json array
     strToArray: function (str) {
-        return $.parseJSON(str);
+        return JSON.parse(str);
     },
 
     //find jarray
@@ -144,7 +159,7 @@ var _json = {
                 delete obj[key];
             } else if (_json.isKeyValue(value)) {
                 _json.removeNull(value, level + 1);
-            } else if ($.isArray(value)) {
+            } else if (Array.isArray(value)) {
                 //check
                 var len = value.length;
                 if (len == 0) {

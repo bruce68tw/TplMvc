@@ -95,7 +95,7 @@ var _input = {
             case 'read':
                 var format = obj.data('format');
                 if (_str.notEmpty(format) && _str.notEmpty(_BR[format]))
-                    value = _date.mmToFormat(value, _BR[format]);
+                    value = _date.dtsToFormat(value, _BR[format]);
                 _iread.setO(obj, value);
                 break;
             case 'link':
@@ -124,6 +124,26 @@ var _input = {
     getObj: function (fid, box, ftype) {
         ftype = ftype || _input.getType(_obj.get(fid, box));
         return (ftype === 'radio') ? _iradio.getObj(fid, box) : _obj.get(fid, box);
+    },
+
+    /**
+     * get data-fid of object
+     * param obj {object}
+     * return fid string
+     */
+    getFid: function (obj) {
+        return obj.data('fid');
+    },
+
+    /**
+     * get data-fid string, ex: [data-fid=XXX]
+     * param fid {stirng} optional, if empty means find all inputs with data-fid
+     * return {string} filter
+     */
+    fidFilter: function (fid) {
+        return _str.isEmpty(fid)
+            ? '[data-fid]'
+            : `[data-fid='${fid}']`;
     },
 
 
