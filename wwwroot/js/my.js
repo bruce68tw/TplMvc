@@ -58,6 +58,16 @@ var _ajax = {
         return await _ajax._rpcA(json, fnOk, block);
     },
 
+    getIntA: async function (url, data, fnOk, block) {
+        var json = {
+            url: url,
+            type: 'POST',
+            data: data,
+            dataType: 'text',   //backend return text(ContentResult with text)
+        };
+        return await _ajax._rpcA(json, fnOk, block);
+    },
+
     /**
      * ajax return html string
      * param fnOk {function} (optional) callback function
@@ -117,9 +127,9 @@ var _ajax = {
      * 使用 async/await 傳回值 for caller 判斷執行結果是否成功
      * param json {json} ajax json
      * param fnOk {function} (optional) callback function
-     * param fnError {function} (optional) callback function
+     * //param fnError {function} (optional) callback function
      * param block {bool/object} block ui or not, default true
-     *   如果要block modal, 必須傳入 modal object !!
+     *   //如果要block modal, 必須傳入 modal object !!
      * return {bool/json/any} ResultDto return null when error
      *   bool: fnOk not empty, return false when error
      *   json/any: fnOk is empty, return null when error
@@ -234,8 +244,8 @@ var _ajax = {
      * param result {ResultDto} error msg
      */ 
     resultToErrMsg: function (result) {
-        return (result.ErrorMsg)
-            ? _ajax.strToErrMsg(result.ErrorMsg)
+        return (result[_fun.FidErrorMsg])
+            ? _ajax.strToErrMsg(result[_fun.FidErrorMsg])
             : '';
     },
 
@@ -287,6 +297,9 @@ var _array = {
         return ary.join(sep);
     },
 
+    isEmpty: function (ary) {
+        return (ary == null || ary.length == 0);
+    },
 };//class
 var _assert = {
 
@@ -1333,6 +1346,7 @@ var _fun = {
     //for moment.js, match to _Fun.cs CsDtFmt
     MmDateFmt: 'YYYY/MM/DD',
     MmDtFmt: 'YYYY/MM/DD HH:mm:ss',
+    FidErrorMsg: '_ErrorMsg',
 
     //input field error validation, need match server side _Web.cs
     //jsPath: '../Scripts/',      //js path for load
@@ -1383,6 +1397,13 @@ var _fun = {
         _pjax.init('.xu-body');
         _tool.init();
         moment.locale(_fun.locale);
+
+        //資安: 防止CSRF
+        $.ajaxSetup({
+            headers: {
+                'RequestVerificationToken': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
     },
 
     //server need Fun/Hello()
@@ -1747,6 +1768,18 @@ var _icheck = $.extend({}, _ibase, {
             ary[i] = $(this).data('value');
         });
         return ary;
+    },
+
+    /**
+     * get checked checkebox data-value string array
+     * form {object} container
+     * fid {string} (optional '_check0') data-fid value
+     * return {string array}
+     */ 
+    checkAll: function (form, status, fid) {
+        fid = fid || _icheck.Check0Id;
+        var filter = _input.fidFilter(fid);
+        _icheck.setO(form.find(filter), status);
     },
 
     /**
@@ -3529,6 +3562,18 @@ var _obj = {
         return obj.attr(attr);
     },
 
+    show: function (obj) {
+        obj.show();
+    },
+    showByStatus: function (obj, status) {
+        if (status)
+            obj.show();
+        else
+            obj.hide();
+    },
+    hide: function (obj) {
+        obj.hide();
+    },
 }; //class
 //SPA pjax
 var _pjax = {
@@ -3886,11 +3931,11 @@ var _tool = {
 
     init: function () {
         //alert
-        _tool.xgAlert = $('.xg-alert');
         _tool.xgMsg = $('#xgMsg');  //使用id
         _tool.xgAns = $('#xgAns');  //使用id
-        _tool.xgArea = $('#xg-area');
-        _tool.xgImage = $('#xg-image');
+        _tool.xgAlert = $('.xg-alert');
+        _tool.xgArea = $('.xg-area');
+        _tool.xgImage = $('.xg-image');
     },
 
     /**
@@ -4379,7 +4424,7 @@ function CrudE(edits) {
         var childLen = this._getEditChildLen(edit);
         for (var i = 0; i < childLen; i++) {
             var edit2 = this._getEditChild(edit, i);
-            edit2.dataJson = this._getChildJson(json, i);
+            edit2.dataJson = this.getChildJson(json, i);
             edit2.loadRows(this.jsonGetRows(edit2.dataJson));
         }
 
@@ -4661,7 +4706,8 @@ function CrudE(edits) {
     };
 
     //get child json
-    this._getChildJson = function (upJson, childIdx) {
+    //_getChildJson -> getChildJson
+    this.getChildJson = function (upJson, childIdx) {
         var childs = _edit.Childs;
         return (upJson[childs] == null || upJson[childs].length <= childIdx)
             ? null
@@ -4670,7 +4716,7 @@ function CrudE(edits) {
 
     //get child rows
     this.getChildRows = function (upJson, childIdx) {
-        var child = this._getChildJson(upJson, childIdx);
+        var child = this.getChildJson(upJson, childIdx);
         return this.jsonGetRows(child);
     };
 
@@ -4921,7 +4967,7 @@ function CrudE(edits) {
      * return {bool}
      */
     this.onUpdateA = async function(key) {
-        _edit.removeIsNew(this.edit0.eform);    //增加_IsNew隱藏欄位
+        _edit.removeIsNew(this.edit0.eform);    //移除_IsNew隱藏欄位
         return await this._updateOrViewA(_fun.FunU, key);
     };
 
@@ -5498,6 +5544,7 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
         
         //default config for dataTables
         var config = {
+            //deferLoading: 0,    //0表示一開始不自動執行
             pageLength: _fun.pageRows || 10,
             lengthMenu: [10, 20, 50, 100], //25 -> 20 for more friendly
             processing: false,  //use custom processing msg
@@ -5572,6 +5619,12 @@ t
                 */
                 //add input parameter for datatables
                 data: function (arg) {
+                    //如果存在 _me.fnWhenFind(傳回bool), 則先檢查
+                    if (_me && _me.fnWhenFind){
+                        if (!_me.fnWhenFind())
+                            return;
+                    }
+
                     //write order.fid if any
                     var orders = arg.order;
                     if (orders.length > 0) {

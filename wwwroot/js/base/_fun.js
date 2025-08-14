@@ -5,6 +5,7 @@ var _fun = {
     //for moment.js, match to _Fun.cs CsDtFmt
     MmDateFmt: 'YYYY/MM/DD',
     MmDtFmt: 'YYYY/MM/DD HH:mm:ss',
+    FidErrorMsg: '_ErrorMsg',
 
     //input field error validation, need match server side _Web.cs
     //jsPath: '../Scripts/',      //js path for load
@@ -55,6 +56,13 @@ var _fun = {
         _pjax.init('.xu-body');
         _tool.init();
         moment.locale(_fun.locale);
+
+        //資安: 防止CSRF
+        $.ajaxSetup({
+            headers: {
+                'RequestVerificationToken': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
     },
 
     //server need Fun/Hello()

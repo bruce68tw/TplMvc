@@ -1,4 +1,4 @@
-﻿
+
 /**
  * create jQuery dataTables object
  * param selector {string} datatable selector
@@ -66,6 +66,7 @@ function Datatable(selector, url, dtConfig, findJson, fnOk, tbarHtml) {
         
         //default config for dataTables
         var config = {
+            //deferLoading: 0,    //0表示一開始不自動執行
             pageLength: _fun.pageRows || 10,
             lengthMenu: [10, 20, 50, 100], //25 -> 20 for more friendly
             processing: false,  //use custom processing msg
@@ -140,6 +141,12 @@ t
                 */
                 //add input parameter for datatables
                 data: function (arg) {
+                    //如果存在 _me.fnWhenFind(傳回bool), 則先檢查
+                    if (_me && _me.fnWhenFind){
+                        if (!_me.fnWhenFind())
+                            return;
+                    }
+
                     //write order.fid if any
                     var orders = arg.order;
                     if (orders.length > 0) {
